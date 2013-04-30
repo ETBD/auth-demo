@@ -1,3 +1,7 @@
+ENV['AUTH_APP_ID'] = "e1c16b8f8d07c8f450f7faf04b9c2f8ef9fc941e13fdb5f1d975ad50bd9eb2a2"
+ENV['AUTH_SECRET'] = "023157f853ebf68d938c99827eb9373d9871109208c9f4ca02f985f7477b4d76"
+ENV["AUTH_SITE"] = "http://localhost:3001"
+
 RickstevesCms::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 

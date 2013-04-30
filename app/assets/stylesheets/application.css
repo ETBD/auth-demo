@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+
+ div#user-nav {
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  background-color: lightgrey;
+  float: right;
+ }

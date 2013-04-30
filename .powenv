@@ -1,0 +1,12 @@
+export PATH ; PATH="/Volumes/Storage/Users/tomc/.rvm/gems/ruby-1.9.3-p194@lovewhoyouwant/bin:/Volumes/Storage/Users/tomc/.rvm/gems/ruby-1.9.3-p194@global/bin:/Volumes/Storage/Users/tomc/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/tomc/.rvm/bin:$PATH"
+export rvm_env_string ; rvm_env_string='ruby-1.9.3-p194@lovewhoyouwant'
+export rvm_path ; rvm_path='/Volumes/Storage/Users/tomc/.rvm'
+export rvm_ruby_string ; rvm_ruby_string='ruby-1.9.3-p194'
+export rvm_gemset_name ; rvm_gemset_name='lovewhoyouwant'
+export RUBY_VERSION ; RUBY_VERSION='ruby-1.9.3-p194'
+export GEM_HOME ; GEM_HOME='/Volumes/Storage/Users/tomc/.rvm/gems/ruby-1.9.3-p194@lovewhoyouwant'
+export GEM_PATH ; GEM_PATH='/Volumes/Storage/Users/tomc/.rvm/gems/ruby-1.9.3-p194@lovewhoyouwant:/Volumes/Storage/Users/tomc/.rvm/gems/ruby-1.9.3-p194@global'
+export MY_RUBY_HOME ; MY_RUBY_HOME='/Volumes/Storage/Users/tomc/.rvm/rubies/ruby-1.9.3-p194'
+export IRBRC ; IRBRC='/Volumes/Storage/Users/tomc/.rvm/rubies/ruby-1.9.3-p194/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT

@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RickstevesCms</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>RickstevesCms</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "auth-client" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="notices">
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
+      <% if flash[:error] %>
+        <div class="error"><%= flash[:error] %></div>
+      <% end %>
+    </div>
+    <div id="user-nav">
+      <% unless user_signed_in? %>
+        <%= link_to "Sign in", user_omniauth_authorize_path(:ricksteves) %>
+      <% else %>
+        Signed in as <%= current_user.email %> (<%= link_to "sign out", user_sign_out_path %>)
+      <% end %>
+    </div>
+    <div id="content">
+      <%= yield %>
+    </div>
+  </body>
 </html>

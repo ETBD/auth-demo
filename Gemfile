@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.10'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -36,3 +36,11 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem "ricksteves-auth-client", :path => '~/src/rails/ETBD/auth-client', :git => 'git@github.com:ETBD/auth-client.git'
+#gem "ricksteves-auth-client", :git => 'git@github.com:ETBD/auth-client.git'
+gem "devise"
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
