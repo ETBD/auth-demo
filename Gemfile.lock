@@ -2,15 +2,10 @@ GIT
   remote: git@github.com:ETBD/auth-client.git
   revision: 1d17ae75ed8695eb1f815085cb87e58c8c6d5e3c
   specs:
-
-PATH
-  remote: ~/src/rails/ETBD/auth-client
-  specs:
     ricksteves-auth-client (0.0.1)
       devise
       omniauth-oauth2
-      rails (~> 3.2.2)
-      rest-client
+      rails
 
 GEM
   remote: https://rubygems.org/
@@ -127,8 +122,6 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     sass (3.2.8)
     sass-rails (3.2.6)
       railties (~> 3.2.0)

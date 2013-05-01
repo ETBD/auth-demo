@@ -2,7 +2,7 @@ require 'ricksteves/auth/client/callbacks_controller'
 
 RickstevesCms::Application.routes.draw do
   devise_for :users, controllers: {sessions: "sessions", omniauth_callbacks: "RickSteves::Auth::Client/callbacks"} do
-    match "/user/sign_out" => "omniauth_callbacks#destroy"
+    match "/user/sign_out" => "callbacks#destroy"
   end
 
   root :to => "hello#index"

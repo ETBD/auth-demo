@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   end
 
   def password_required?
+    # this lets us create an account with no password from OAuth
     false
   end
 end
