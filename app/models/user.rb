@@ -1,8 +1,10 @@
-require 'ricksteves/auth/client/user'
+require 'ricksteves/auth/client/model_helpers'
 
-class User < RickSteves::Auth::Client::User
+class User < ActiveRecord::Base
+  include RickSteves::Auth::Client::ModelHelpers
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
-  devise :trackable, :omniauthable
+  devise :trackable
 end

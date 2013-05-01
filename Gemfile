@@ -36,7 +36,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-gem "ricksteves-auth-client", :git => 'git@github.com:ETBD/auth-client.git', :path => '~/src/rails/ETBD/auth-client'
+gem "ricksteves-auth-client", :git => 'git@github.com:ETBD/auth-client.git'
 gem "devise"
 
 group :development do

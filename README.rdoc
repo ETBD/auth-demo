@@ -1,4 +1,4 @@
-==
+== Rick Steves Auth Library
 
 Include the gem:
 
